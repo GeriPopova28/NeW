@@ -1,5 +1,6 @@
 /* style.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Your+Font+Name&display=swap');
 
 /* ======= GLOBAL STYLES ======= */
 * {
@@ -40,7 +41,8 @@
   
   /* ======= HEADER ======= */
   .header {
-    background-color: #fff;
+    background-color: #a9aae6;
+    color:white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
@@ -74,17 +76,24 @@
   .nav {
     flex: 1;
     display: flex;
+    font-family: 'Rubik', sans-serif ;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
   }
   
   .nav a {
     text-decoration: none;
-    color: #1f3a93;
+    color: white;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.4rem;
     position: relative;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    font-family: 'Rubik', sans-serif ;
+    padding: 0.4rem 0;
+    text-transform: uppercase;
+    text-shadow: 6px 6px 6px rgba(47, 16, 224, 0.4);
+    letter-spacing: 0.03em;
+
   }
   
   .nav a::after {
@@ -112,12 +121,24 @@
   /* ======= HERO ======= */
   .hero {
     background: #e6ecf8;
+    font-family: 'Rubik', sans-serif;
     text-align: center;
     padding: 4rem 0;
   }
   
   .hero h1 {
     font-size: 2.5rem;
+    color: #3c16c5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2.4rem;
+    position: relative;
+    transition: all 0.3s ease;
+    font-family: 'Rubik', sans-serif ;
+    padding: 0.4rem 0;
+    text-transform: uppercase;
+    text-shadow: 6px 6px 6px rgba(47, 16, 224, 0.4);
+    letter-spacing: 0.03em;
   }
   
   .hero p {
@@ -138,6 +159,26 @@
   .btn-primary:hover {
     background-color: #153075;
   }
+
+  .btn-primary:active {
+  transform: scale(0.95);
+}
+
+  @media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+  }
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
   
   /* ======= SECTIONS ======= */
   .section {
