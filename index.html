@@ -11,7 +11,9 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <div class="logo">YourLogo</div>
+        <a href="index.html" class="logo-link">
+            <img src="assets/logo/logo.svg" alt="Cbesltd Logo" class="logo-img">
+          </a>
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#machines">Machines</a>
@@ -87,15 +89,24 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Us</h2>
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Address:</strong> 123 Industrial Road, Suite 45<br>City, Country</p>
+        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@cbesltd.com">info@cbesltd.com</a></p>
+        <p><strong>Working Hours:</strong><br>Mon – Fri, 9:00 – 17:00</p>
+      </div>
+  
+      <!-- Right: Form -->
       <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
+        <h3>Send Us a Message</h3>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   </section>

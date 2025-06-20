@@ -58,16 +58,54 @@
     font-weight: 600;
     color: #1f3a93;
   }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
   
   .nav a {
-    margin-left: 1.5rem;
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    color: #1f3a93;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #1f3a93;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
   
   .nav a:hover {
-    color: #1f3a93;
+    color: #153075;
   }
   
   /* ======= HERO ======= */
@@ -143,6 +181,17 @@
   }
   
   /* ======= CONTACT FORM ======= */
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-info, .contact-form {
+    flex: 1;
+  }
+
   .contact-form {
     max-width: 600px;
     margin: auto;
@@ -191,9 +240,24 @@
   
     .nav {
       margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
     }
   }
+  
+  @media (min-width: 768px) {
+    .contact-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+  
+    .contact-info,
+    .contact-form {
+      flex: 1;
+    }
+  }
+  
   
