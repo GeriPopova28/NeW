@@ -1,5 +1,6 @@
 /* style.css */
 
+
 /* ======= GLOBAL STYLES ======= */
 * {
     margin: 0;
@@ -37,36 +38,49 @@
     margin-bottom: 1.5rem;
   }
   
-/* ======= HEADER ======= */
-.header {
-    background-color: #1f1f1f;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* ======= HEADER ======= */
+  .header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
   }
   
   .header .container {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
   }
   
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f3a93;
+  }
+
   .logo-link {
-    justify-self: start;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    height: 40px;
+    cursor: pointer;
   }
   
   .nav {
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
   }
   
   .nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #1f3a93;
     font-weight: 600;
     font-size: 1rem;
     position: relative;
@@ -80,7 +94,7 @@
     bottom: -4px;
     width: 100%;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #1f3a93;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease-out;
@@ -92,13 +106,7 @@
   }
   
   .nav a:hover {
-    color: #00aaff;
-  }
-  
-  .logo-img {
-    height: 40px;
-    cursor: pointer;
-    filter: brightness(0) invert(1);
+    color: #153075;
   }
   
   /* ======= HERO ======= */
@@ -172,40 +180,120 @@
   .card a:hover {
     text-decoration: underline;
   }
+
+   /* ======= CONTACTS ======= */
   
-  /* ======= CONTACT FORM ======= */
-  
+.contact-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.contact-info {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  font-size: 1.2rem; 
+  color: #333;
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-left: 0;
+}
+
+.contact-info h3 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem; 
+  font-weight: 700;
+  color: #0f4783;
+  margin-bottom: 1rem;
+  letter-spacing: 0;
+}
+.contact-form {
+  max-width: 100%;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h3 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem; 
+  font-weight: 700; 
+  color: #0f4783;
+  margin-bottom: 1rem;
+  letter-spacing: 0;
+}
+
+.contact-form input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  width: 100%;
+  height: calc(0.75rem * 2 + 1.1rem + 2px);
+}
+
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  width: 100%;
+  min-height: 15rem; 
+  resize: vertical; 
+}
+
+.contact-form button {
+  align-self: center;
+  padding: 1rem 2rem;
+  background-color: #0f4783;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1a5a9a;
+}
+
+@media (min-width: 992px) {
   .contact-container {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
     gap: 2rem;
   }
 
-  .contact-info, .contact-form {
-    flex: 1;
+  .contact-info {
+    flex: 0 0 50%; 
+    max-width: 50%;
+    font-size: 1.5rem;
   }
-
   .contact-form {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex: 0 0 45%; 
+    max-width: 45%;
+    margin-left: 2rem;
   }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 100%;
-  }
-  
-  .contact-form button {
-    align-self: flex-start;
-  }
-  
+}
+
   /* ======= FOOTER ======= */
   .footer {
     background-color: #1f3a93;

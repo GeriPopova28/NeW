@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
       });
     }
+
+    
   
     // ===== Smooth Scroll for Anchor Links =====
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -70,4 +72,19 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
+
+  <script src="scripts/map.js"></script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+  var map = L.map('map').setView([42.6977, 23.3219], 13); // София за пример
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker([42.6977, 23.3219]).addTo(map)
+    .bindPopup('Нашият офис')
+    .openPopup();
+});
+
   
