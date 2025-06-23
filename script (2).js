@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
 
       const name = form.name.value.trim();
+      const surname = form.surname.value.trim();
       const email = form.email.value.trim();
+      const phone = form.phone.value.trim();
       const message = form.message.value.trim();
 
       if (!name || !email || !message) {
@@ -85,25 +87,19 @@ document.addEventListener('DOMContentLoaded', function () {
       .bindPopup('Нашият офис')
       .openPopup();
   }
-
-const hero = document.querySelector('.hero');
-if (hero) {
-  const images = [
-    'assets/images/logo/hero1.jpg',
-    'assets/images/logo/hero2.jpg',
-    'assets/images/logo/hero3.jpg',
-  ];
-
-  let current = 0; 
-  hero.style.backgroundImage = `url('${images[current]}')`; 
-  console.log('✅ Hero found! Starting with:', images[current]);
-  setInterval(() => {
-    current = (current + 1) % images.length; 
-    hero.style.backgroundImage = `url('${images[current]}')`;
-    console.log('🔄 Changed image:', images[current]);
-  }, 5000); 
-
-} else {
-  console.error('❌ .hero not found in DOM.');
-}
 });
+
+ function openModal(name) {
+    document.getElementById('modal-' + name).style.display = 'block';
+  }
+
+  function closeModal(name) {
+    document.getElementById('modal-' + name).style.display = 'none';
+  }
+  window.onclick = function(event) {
+    document.querySelectorAll(".modal").forEach(modal => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
