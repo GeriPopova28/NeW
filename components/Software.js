@@ -1,3 +1,4 @@
+import styles from '../styles/software.module.css';
 export default function Software() {
   return (
     <section id="software" className="section">

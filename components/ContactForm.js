@@ -1,3 +1,5 @@
+import styles from '../styles/contact.module.css';
+
 import { useState } from 'react';
 
 export default function ContactForm() {

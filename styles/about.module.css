@@ -1,0 +1,27 @@
+/* about.module.css */
+
+.about {
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 960px;
+}
+
+.heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #013159;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #4571c9;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}

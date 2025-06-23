@@ -1,3 +1,4 @@
+import styles from '../styles/hero.module.css'; 
 export default function Hero() {
   return (
     <section className="hero">

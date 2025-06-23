@@ -1,3 +1,5 @@
+import styles from '../styles/team.module.css';
+
 export default function Team() {
   return (
     <section id="team" className="section light">
