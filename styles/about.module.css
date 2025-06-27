@@ -1,27 +1,41 @@
-/* about.module.css */
-
-.about {
-  padding: 6rem 1.5rem;
+.aboutSection {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  z-index: 1;
+  color: #000000;
+  padding: 4rem 2rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
-  margin: 3rem auto;
-  max-width: 960px;
+  overflow: hidden;
+}
+
+.aboutSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse at bottom left, rgba(81, 255, 0, 0.25), transparent 40%), 
+    radial-gradient(ellipse at bottom right, rgba(255, 0, 0, 0.25), transparent 40%), 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .heading {
-  font-size: 3.2rem;
+  font-size: 30px;
   font-weight: 700;
-  color: #013159;
+  color: #000000;
   letter-spacing: 0.03em;
   margin-bottom: 1.5rem;
+  text-align: left;
+  z-index: 1;
 }
 
 .description {
-  font-size: 1.25rem;
-  color: #4571c9;
+  font-size: 18px;
+  color: #000000;
   line-height: 1.7;
   margin-bottom: 2.5rem;
+  margin-left: 5rem;
+  text-align: left;
+  z-index: 1;
 }

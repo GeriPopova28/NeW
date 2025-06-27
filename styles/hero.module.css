@@ -1,36 +1,26 @@
-.hero {
-  background-position: center;
-  background-size: cover;
-  font-family: 'Rubik', sans-serif;
+.heroSection {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #8cd392 0%, #60a165 100%);
+  color: white;
+  padding: 6rem 2rem;
   text-align: center;
-  padding: 4rem 0;
-  color: #013159;
-  background: transparent;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hero h1 {
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroSection h1 {
   font-size: 3rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  color: #013159;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  letter-spacing: 0.03em;
-  padding: 0;
+  margin: 0.5rem 0;
+  font-style: italic;
 }
 
-.hero p {
+.heroSection p {
   font-size: 1.25rem;
-  color: #4571c9;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  .hero p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    padding: 0 1rem;
-  }
+  margin-top: 1.5rem;
+  color: #ddd;
 }
