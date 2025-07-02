@@ -29,7 +29,8 @@ export default function Team() {
     <section id="team" className={`${styles.teamSection}`}>
       <div className={styles.container}>
         <h2 className={styles.heading}>Meet the Team</h2>
-        <p className={styles.subheading}>  <p>The entire CBES LTD team thanks its customers for the respect and the trust shown! For us, there is no greater profit than this! Nor a greater passion than that of reaching professional heights together!</p>
+        <p className={styles.subheading}> The entire CBES LTD team thanks its customers for the respect and the trust shown! 
+          For us, there is no greater profit than this! Nor a greater passion than that of reaching professional heights together!
 </p>
         <div className={styles.grid}>
           {teamMembers.map(member => (

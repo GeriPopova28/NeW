@@ -1,19 +1,4 @@
 .contactSection {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background:radial-gradient(ellipse at bottom left, rgba(21, 255, 0, 0.25), transparent 20%),
-  radial-gradient(ellipse at bottom right, rgba(97, 141, 76, 0.25), transparent 20%), 
-  linear-gradient(to bottom, rgba(228, 203, 203, 0.5) 0%, rgba(170, 80, 80, 0) 100%);
-  color: #000000;
-  padding: 4rem 2rem;
-  font-family: 'Arial', sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem; 
-  position: relative; 
-  z-index: 1;
   position: relative;
   padding: 4rem 2rem;
   text-align: center;
@@ -22,27 +7,24 @@
   overflow: hidden;
 }
 
-
 .contactSection::before {
   content: '';
-  position: absolute;
+  position: relative;
   inset: 0;
-  z-index: 0;
+  z-index: 1;
   background:
-    radial-gradient(ellipse at bottom left, rgba(184, 122, 212, 0.25), transparent 40%),
-    radial-gradient(ellipse at bottom right, rgba(127, 155, 233, 0.25), transparent 40%),
+    radial-gradient(ellipse at bottom left, rgba(184, 122, 212, 0.25), transparent 40%), 
+    radial-gradient(ellipse at bottom right, rgba(127, 155, 233, 0.25), transparent 40%), 
     linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
 }
-
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
+  padding: 0 2rem; 
+  position: relative; 
   z-index: 1;
 }
-
 
 .contactContainer {
   color:white;
@@ -52,7 +34,6 @@
   max-width: 1200px;
   margin: auto;
 }
-
 
 .contactInfo {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -70,11 +51,9 @@
 
 .contactInfo p {
   font-family: Georgia, 'Times New Roman', Times, serif;
-.contactInfo p {
   margin-bottom: 0;
   text-align: left;
 }
-
 
 .contactInfo h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -84,11 +63,9 @@
   margin-bottom: 1rem;
 }
 
-
 .mapContainer {
   margin-top: 1rem;
 }
-
 
 .contactForm {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -101,7 +78,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-
 .contactForm input,
 .contactForm textarea {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -112,18 +88,14 @@
   background-color: white;      
   color: black;                  
   border: 1px solid #ccc; 
-  border: 1px solid #ccc;
   box-sizing: border-box;
        
 }
 
-
 .contactForm textarea {
   min-height: 150px; 
-  min-height: 150px;
   resize: vertical;
 }
-
 
 .contactForm button {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -139,7 +111,6 @@
   width: 520px;
 }
 
-
 .contactForm button:hover {
   background-color: #000000;
 }
@@ -152,29 +123,17 @@
   margin-bottom: 1rem;
 }
 
-
-.contactForm h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 1.5rem;
-}
-
-
 @media (min-width: 992px) {
   .contactContainer {
     flex-direction: row;
     justify-content: space-between;
   }
 
-
   .contactInfo, .contactForm {
     flex: 1;
   }
-
 
   .contactForm {
     margin-left: 2rem;
   }
 } 
-}

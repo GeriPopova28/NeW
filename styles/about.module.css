@@ -22,9 +22,11 @@
 }
 
 .container {
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .heading {
@@ -48,7 +50,7 @@
   line-height: 1.7;
   margin-bottom: 2.5rem;
   margin-left: 5rem;
-  text-align: left;
+  text-align: center;
   position: relative;
   z-index: 1;
 }
