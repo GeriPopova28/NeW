@@ -2,6 +2,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   position: relative;
   z-index: 1;
+  position: relative;
   color: #000000;
   padding: 4rem 2rem;
   text-align: center;
@@ -41,7 +42,6 @@
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-
 .description {
   font-size: 20px;
   color: #000000;
@@ -51,7 +51,6 @@
   text-align: left;
   position: relative;
   z-index: 1;
-
 }
 
 @media (max-width: 900px) and (min-width: 600px) {
@@ -86,3 +85,4 @@
     text-align: center;
   }
 }
+

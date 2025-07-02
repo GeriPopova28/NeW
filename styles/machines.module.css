@@ -39,7 +39,21 @@
   letter-spacing: 1px; 
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2)
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
 
+.heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  text-align: left;
+}
 
 .gridContainer {
   background-color: transparent;
