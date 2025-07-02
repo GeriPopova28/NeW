@@ -1,7 +1,5 @@
 .heroSection {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   background: linear-gradient(135deg, #8cd392 0%, #60a165 100%);
-  color: white;
   padding: 6rem 2rem;
   text-align: center;
   border-radius: 12px;
@@ -9,18 +7,54 @@
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .heroSection h1 {
-  font-size: 3rem;
+  font-size: 40px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0.5rem 0;
+  text-align: center;
   font-style: italic;
+  color: black;
+  transition: color 0.3s ease-in-out;
+  letter-spacing: 1px; 
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .heroSection p {
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
-  color: #ddd;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  margin-left: 5rem;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+}
+
+@media (max-width: 768px) { 
+  .heroSection {
+    padding: 4rem 1rem;
+  }
+  .heroSection h1 {
+    font-size: 32px;
+  }
+  .heroSection p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) { 
+  .heroSection {
+    padding: 3rem 0.5rem;
+  }
+  .heroSection h1 {
+    font-size: 28px;
+  }
+  .heroSection p {
+    font-size: 18px;
+  }
 }

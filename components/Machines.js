@@ -13,7 +13,9 @@ export default function Machines() {
       <div className={styles.container}>
         <h2 className={styles.heading}>Our Machines</h2>
         <p className={styles.description}>
-          Explore the types of furniture-making machines we help you acquire.
+          We are able to satisfy all your needs in terms of various and
+           modern technological solutions for the woodworking of furniture, 
+           doors and windows, ensuring exceptional quality and efficiency.
         </p>
         <div className={styles.grid}>
           <div className={styles.card}>
