@@ -7,6 +7,9 @@
   text-align: center;
   border-radius: 12px;
   overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .aboutSection::before {
@@ -37,49 +40,99 @@
   transition: color 0.3s ease-in-out;
   position: relative;
   z-index: 1;
-  text-align: center;
+  text-align: left;
   transition: color 0.3s ease-in-out;
   letter-spacing: 1px; 
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+
 .description {
   font-size: 20px;
   color: #000000;
   line-height: 1.7;
+  margin-top: 5rem;
   margin-bottom: 2.5rem;
-  margin-left: 5rem;
-  text-align: center;
+  text-align: left;
+  margin-left: auto;  
+  margin-right: auto;
+  max-width: 800px;
   position: relative;
   z-index: 1;
+}
+
+.contentGrid {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10rem; 
+  justify-content: center;
+  align-items: flex-start; 
+  margin-top: -5rem; 
+}
+
+.leftColumn {
+  flex: 2; 
+  min-width: 450px; 
+  max-width: 700px; 
+  text-align: left;
+}
+
+.rightColumn {
+  flex: 1; 
+  min-width: 350px; 
+  max-width: 450px; 
+  text-align: left;
+}
+
+.partnersHeading {
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0.5rem 0;
+  font-style: italic;
+  color: black;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  transition: color 0.3s ease-in-out;
+  letter-spacing: 1px; 
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.partnersList {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.partnersList li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 900px) and (min-width: 600px) {
   .aboutSection {
     padding: 3rem 1.5rem;
   }
-  
   .heading {
     font-size: 32px;
   }
-  
   .description {
     font-size: 16px;
     margin-left: 2rem;
     text-align: left;
   }
 }
-
 @media (max-width: 599px) {
   .aboutSection {
     padding: 2rem 1rem;
-  }
-  
+  } 
   .heading {
     font-size: 28px;
     text-align: center;
-  }
-  
+  }  
   .description {
     font-size: 14px;
     margin-left: 0;
@@ -87,3 +140,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contentGrid {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    text-align: center; 
+  }
+
+  .partnersList {
+    text-align: center; 
+  }
+}

@@ -16,7 +16,7 @@
   background:
     radial-gradient(ellipse at bottom left, rgba(155, 212, 122, 0.25), transparent 40%), 
     radial-gradient(ellipse at bottom right, rgba(233, 127, 127, 0.25), transparent 40%), 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0) 100%);
 }
 
 .container {
@@ -84,7 +84,7 @@
 
 .card button {
   color: black;
-  background-color: rgb(124, 202, 114);
+  background-color: rgb(255, 255, 255);
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 6px;
@@ -94,11 +94,11 @@
 }
 
 .card button:hover {
-  background-color: rgb(190, 90, 190);
+  background-color: rgb(255, 255, 255);
 }
 
 .card button:focus {
-  outline: 3px solid rgb(160, 70, 160);
+  outline: 3px solid rgb(255, 255, 255);
   outline-offset: 2px;
 }
 
