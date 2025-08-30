@@ -10,6 +10,8 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  scroll-margin-top: 80px;
+  background-color: #f9f9fb;
 }
 
 .aboutSection::before {
@@ -110,6 +112,17 @@
   line-height: 1.8;
   color: #000000;
   margin-bottom: 0.5rem;
+}
+
+.partnersList li a {
+  color: #333; 
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.partnersList li a:hover {
+  color: #6a9c4b;
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) and (min-width: 600px) {

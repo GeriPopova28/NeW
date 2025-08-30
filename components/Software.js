@@ -28,7 +28,7 @@ export default function Software() {
           Italian woodworking technologies but also to provide professional and transparent service that builds mutual trust
            and respect.
           It is a great honor when our customer becomes not only a partner but also a dear friend. Our entire team thanks customers for their
-     respect and trust!
+          respect and trust!
         </p>
         <div className={styles.grid}>
           {cards.map((card, index) => (
