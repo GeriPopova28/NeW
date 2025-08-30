@@ -39,11 +39,6 @@ export default function ContactForm() {
     <section id="contact" className={styles.contactSection}>
       <div className={styles.contactContainer}>
         <div className={styles.contactInfo}>
-          <h3>Contact Information</h3>
-          <p><strong>Address:</strong> 123 Industrial Road, Suite 45<br />City, Country</p>
-          <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-          <p><strong>Email:</strong> <a href="mailto:info@cbesltd.com">info@cbesltd.com</a></p>
-          <p><strong>Working Hours:</strong><br />Mon – Fri, 9:00 – 17:00</p>
           <div className={styles.mapContainer}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.123456789!2d23.321!3d42.697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVitosha+Blvd+10%2C+1000+Sofia%2C+Bulgaria!5e0!3m2!1sen!2sbg!4v1678901234567!5m2!1sen!2sbg"

@@ -7,7 +7,11 @@
   padding: 6rem 2rem;
   text-align: center;
   border-radius: 12px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f9f9fb;
 }
 
 .container {
@@ -33,7 +37,7 @@
   line-height: 1.7;
   margin-bottom: 2.5rem;
   margin-left: 5rem;
-  text-align: left;
+  text-align: center;
   position: relative;
   z-index: 1;
   font-style: italic;
